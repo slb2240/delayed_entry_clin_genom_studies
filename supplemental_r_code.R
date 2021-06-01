@@ -50,4 +50,4 @@ ggsurvplot(
   legend.labs = c("Unadjusted", "Adjusted for Delayed Entry")
 ) + 
   labs(title = "Overall Survival from Diagnosis", 
-       subtitle = "Among Stage IV CRC Diagnosis")
+       subtitle = "Among Stage IV CRC Patients")
