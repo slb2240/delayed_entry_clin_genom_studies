@@ -3,7 +3,7 @@
 ## Calculating overall survival from diagnosis ## 
 #################################################
 
-## Load library
+## Load libraries
 library(survival)
 library(survminer)
 
@@ -48,4 +48,6 @@ ggsurvplot(
   xlim = c(0, 60),
   break.x.by = 6,
   legend.labs = c("Unadjusted", "Adjusted for Delayed Entry")
-) 
+) + 
+  labs(title = "Overall Survival from Diagnosis", 
+       subtitle = "Among Stage IV CRC Diagnosis")
