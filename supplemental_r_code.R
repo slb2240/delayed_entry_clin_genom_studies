@@ -25,7 +25,7 @@ summary(traditional_model)
 ## Model adjusting for delayed entry
 delayed_entry_model = survfit(Surv(event = os_status_dx, time = tt_cpt_report_mos, time2 = tt_os_dx_mos) ~ 1, 
                               data = crc_data)
-print(traditional_model)
+print(delayed_entry_model)
 summary(delayed_entry_model)
 
 ## Plot survival curves
