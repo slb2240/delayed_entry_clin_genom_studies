@@ -32,10 +32,6 @@ print(delayed_entry_model)
 summary(delayed_entry_model)
 
 
-### Cox Proportional Hazard model
-coxph(Surv(time = tt_cpt_report_mos, time2 = tt_os_dx_mos, event = os_status_dx) ~ 1, data = crc_data)
-
-
 ## Plot survival curves
 ggsurvplot(
   fit = list(traditional_fit = survfit(Surv(event = os_status_dx, time = tt_os_dx_mos) ~ 1, 
