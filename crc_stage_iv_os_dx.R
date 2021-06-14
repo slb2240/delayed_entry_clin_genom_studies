@@ -21,10 +21,6 @@ traditional_model = survfit(Surv(event = os_status_dx, time = tt_os_dx_mos) ~ 1,
 print(traditional_model)
 summary(traditional_model)
 
-### Cox Proportional Hazard model
-coxph(Surv(time = tt_os_dx_mos, event = os_status_dx) ~ 1, data = crc_data)
-
-
 ## Model adjusting for delayed entry
 delayed_entry_model = survfit(Surv(event = os_status_dx, time = tt_cpt_report_mos, time2 = tt_os_dx_mos) ~ 1, 
                               data = crc_data)
