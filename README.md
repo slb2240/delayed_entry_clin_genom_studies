@@ -15,3 +15,4 @@
 
 This repository serves as supplemental material to the manuscript "Implications of Selection Bias Due to Delayed Study Entry in Clinico-Genomic Studies." We provide data and code including tutorial examples to demonstrate adjusting for delayed study entry when estimating overall survival from diagnosis, as described in the manuscript. Example code scripts are provided in R and SAS.
 
+Brown S, Lavery JA, Shen R, et al. Implications of Selection Bias Due to Delayed Study Entry in Clinical Genomic Studies. JAMA Oncol. Published online November 04, 2021. doi:10.1001/jamaoncol.2021.5153
